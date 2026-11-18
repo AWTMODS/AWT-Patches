@@ -1,4 +1,4 @@
-package app.template.patches.picsart
+package app.morphe.patches.picsart
 
 import app.morphe.patcher.Fingerprint
 

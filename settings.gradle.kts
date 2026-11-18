@@ -1,4 +1,4 @@
-rootProject.name = "Wagg13Patch_Morphe"
+rootProject.name = "AWT-Patches"
 
 pluginManagement {
     repositories {
