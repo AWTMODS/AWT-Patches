@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/AWTMODS/AWT-Patches/compare/v1.0.0...v1.0.1) (2026-11-18)
+
+### 🐛 Bug Fixes
+
+* correct package names and project name for AWT-Patches build ([506c581](https://github.com/AWTMODS/AWT-Patches/commit/506c581b47699a1a7518f4e49f34c51e8e6f84f6))
+
 ## 1.0.0 (2026-11-18)
 
 ### 🐛 Bug Fixes
