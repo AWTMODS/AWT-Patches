@@ -15,6 +15,8 @@ val picsartHideTryProPatch = bytecodePatch(
     execute {
         // shouldShowBadge(tab): suspend fun returning Boolean (boxed). Every caller
         // (home toolbar, toolbar manager, create flow) skips building the badge on false.
+        // Fingerprint updated in 31.2.6: now anchored on "badge_home" string instead
+        // of the obfuscated continuation class name.
         ShouldShowSubsBadgeFingerprint.method.addInstructions(
             0,
             """

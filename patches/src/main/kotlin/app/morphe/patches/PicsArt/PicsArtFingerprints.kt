@@ -1,8 +1,6 @@
 package app.template.patches.picsart
 
 import app.morphe.patcher.Fingerprint
-import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
-import com.android.tools.smali.dexlib2.iface.reference.TypeReference
 
 /**
  * Central "ads are disabled" gate (com.picsart.studio.ads.a.g() in 30.9.5).
@@ -58,12 +56,16 @@ internal object AppSignatureHashHelperFingerprint : Fingerprint(
 )
 
 /**
- * ResolveCorrectSubsBadgeUseCase.shouldShowBadge(tab) — the use case behind the
- * "Try PRO" pill in the home toolbar (badge_home) and the create tab.
+ * shouldShowBadge(tab) — the method behind the "Try PRO" pill in the home toolbar
+ * and the create tab. It's a Kotlin suspend fun (hence the ContinuationImpl param)
+ * that checks the tab key (e.g. "badge_home") against remote-config flags.
  *
- * Obfuscation renames the outer class (com.picsart.subscription.trypro.domain.a in
- * 30.9.5) and the method, but the Kotlin coroutine continuation keeps its original
- * name, so we anchor on the `instance-of` check against that continuation type.
+ * In 30.9.5 it lived in com.picsart.subscription.trypro.domain.a, anchored by the
+ * continuation class name. In 31.2.6 the outer class is fully obfuscated, so we
+ * instead anchor on the stable "badge_home" tab key it reads internally.
+ *
+ * Dex search for "badge_home" in 31.2.6 yields 4 hits; this signature
+ * (String + ContinuationImpl → Object) narrows it to exactly one.
  */
 internal object ShouldShowSubsBadgeFingerprint : Fingerprint(
     returnType = "Ljava/lang/Object;",
@@ -71,11 +73,5 @@ internal object ShouldShowSubsBadgeFingerprint : Fingerprint(
         "Ljava/lang/String;",
         "Lkotlin/coroutines/jvm/internal/ContinuationImpl;",
     ),
-    custom = { method, _ ->
-        method.implementation?.instructions?.any { instruction ->
-            val reference = (instruction as? ReferenceInstruction)?.reference
-            (reference as? TypeReference)?.type ==
-                "Lcom/picsart/subscription/trypro/domain/ResolveCorrectSubsBadgeUseCase\$shouldShowBadge\$1;"
-        } == true
-    },
+    strings = listOf("badge_home"),
 )

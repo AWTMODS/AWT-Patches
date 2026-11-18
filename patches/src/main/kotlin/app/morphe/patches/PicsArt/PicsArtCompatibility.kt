@@ -12,5 +12,8 @@ import app.morphe.patcher.patch.Compatibility
 internal val COMPATIBILITY_PICSART = Compatibility(
     name = "Picsart",
     packageName = "com.picsart.studio",
-    targets = listOf(AppTarget(version = "30.9.5")),
+    targets = listOf(
+        AppTarget(version = "30.9.5"),
+        AppTarget(version = "31.2.6"),
+    ),
 )

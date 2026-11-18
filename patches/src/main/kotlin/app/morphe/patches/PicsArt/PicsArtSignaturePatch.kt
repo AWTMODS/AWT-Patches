@@ -4,11 +4,17 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 
 /**
- * Original (Play) signing-certificate MD5 of Picsart 30.9.5. It is the same value
- * stored in the EXIF Make field of assets/bg_texture.jpg (Model holds a second hash).
- * If a future version stops working, re-read both EXIF values and the cert MD5.
+ * Play signing-certificate MD5 stored in the EXIF Make field of assets/bg_texture.jpg.
+ * Picsart compares this against the installed cert's MD5; on mismatch it kills the
+ * process after a random 0-15 s delay (System.exit(15)).
+ *
+ * Version history:
+ *   30.9.5 → 62a1b22cd095777b9ae08a1250c2764d
+ *   31.2.6 → d4c1d0054754dbbe68fa529bbadeeac1  ← current
+ *
+ * To update for a new version: open APK as ZIP → assets/bg_texture.jpg → read EXIF "Make".
  */
-private const val ORIGINAL_SIGNATURE_MD5 = "62a1b22cd095777b9ae08a1250c2764d"
+private const val ORIGINAL_SIGNATURE_MD5 = "d4c1d0054754dbbe68fa529bbadeeac1"
 
 @Suppress("unused")
 val picsartBypassSignatureCheckPatch = bytecodePatch(
