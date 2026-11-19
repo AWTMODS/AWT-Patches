@@ -7,7 +7,7 @@ import app.morphe.patcher.patch.bytecodePatch
 val picsartHideTryProPatch = bytecodePatch(
     name = "Hide Try PRO button",
     description = "Removes the \"Try PRO\" pill from the home toolbar and the create tab.",
-    default = true,
+    default = false,
 ) {
     dependsOn(picsartBypassSignatureCheckPatch)
     compatibleWith(COMPATIBILITY_PICSART)

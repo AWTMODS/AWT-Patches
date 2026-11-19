@@ -2,7 +2,7 @@
   <img src="assets/readme/hero.svg" alt="Wagg13 Patch Lab — Android customization" width="100%" />
 </div>
 
-<h1 align="center">Wagg13 Morphe Patches</h1>
+<h1 align="center">AWT Morphe Patches</h1>
 
 <p align="center">
   Independent Android patches focused on useful feature changes, cleaner interfaces and better control over supported apps.
@@ -16,13 +16,13 @@
 </div>
 
 <div align="center">
-  <a href="https://morphe.software/add-source?github=WaggBR/Wagg13Patch_Morphe"><img src="https://img.shields.io/badge/ADD%20TO-MORPHE-7C3AED?style=for-the-badge&logo=android&logoColor=white" alt="Add to Morphe" /></a>
-  <a href="https://github.com/WaggBR/Wagg13Patch_Morphe/releases"><img src="https://img.shields.io/github/v/release/WaggBR/Wagg13Patch_Morphe?include_prereleases&style=for-the-badge&label=RELEASE" alt="Latest release" /></a>
+  <a href="https://morphe.software/add-source?github=AWTMODS/AWT-Patches"><img src="https://img.shields.io/badge/ADD%20TO-MORPHE-7C3AED?style=for-the-badge&logo=android&logoColor=white" alt="Add to Morphe" /></a>
+  <a href="https://github.com/AWTMODS/AWT-Patches/releases"><img src="https://img.shields.io/github/v/release/AWTMODS/AWT-Patches?include_prereleases&style=for-the-badge&label=RELEASE" alt="Latest release" /></a>
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/github/license/WaggBR/Wagg13Patch_Morphe?style=flat-square&label=license" alt="GPLv3 license" />
-  <img src="https://img.shields.io/github/issues/WaggBR/Wagg13Patch_Morphe?style=flat-square&label=open%20issues" alt="Open issues" />
+  <img src="https://img.shields.io/github/license/AWTMODS/AWT-Patches?style=flat-square&label=license" alt="GPLv3 license" />
+  <img src="https://img.shields.io/github/issues/AWTMODS/AWT-Patches?style=flat-square&label=open%20issues" alt="Open issues" />
   <img src="https://img.shields.io/badge/apps-14-0EA5E9?style=flat-square" alt="14 supported apps" />
   <img src="https://img.shields.io/badge/patches-48-14B8A6?style=flat-square" alt="48 patches" />
   <img src="https://img.shields.io/badge/primary%20architecture-arm64--v8a-64748B?style=flat-square" alt="arm64-v8a" />
@@ -144,9 +144,9 @@ A quick overview of what each app's patches change. Select an app to jump to its
 <p align="center"><sub>Custom vector tiles created for this README to make each app easier to scan at a glance.</sub></p>
 
 <div align="center">
-  <a href="https://morphe.software/add-source?github=WaggBR/Wagg13Patch_Morphe"><strong>＋ Add Wagg13 patches to Morphe</strong></a>
+  <a href="https://morphe.software/add-source?github=AWTMODS/AWT-Patches"><strong>＋ Add Wagg13 patches to Morphe</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/WaggBR/Wagg13Patch_Morphe/releases"><strong>Browse releases</strong></a>
+  <a href="https://github.com/AWTMODS/AWT-Patches/releases"><strong>Browse releases</strong></a>
 </div>
 
 ---
@@ -158,7 +158,7 @@ A quick overview of what each app's patches change. Select an app to jump to its
 Open this link on your Android device with Morphe Manager installed:
 
 <div align="center">
-  <a href="https://morphe.software/add-source?github=WaggBR/Wagg13Patch_Morphe"><img src="https://img.shields.io/badge/Add%20patch%20source-Morphe-7C3AED?style=for-the-badge&logo=android&logoColor=white" alt="Add patch source to Morphe" /></a>
+  <a href="https://morphe.software/add-source?github=AWTMODS/AWT-Patches"><img src="https://img.shields.io/badge/Add%20patch%20source-Morphe-7C3AED?style=for-the-badge&logo=android&logoColor=white" alt="Add patch source to Morphe" /></a>
 </div>
 
 ### Manual setup
@@ -167,7 +167,7 @@ Open this link on your Android device with Morphe Manager installed:
 2. Go to **Patch Sources**.
 3. Add this repository:
    ```text
-   https://github.com/WaggBR/Wagg13Patch_Morphe
+   https://github.com/AWTMODS/AWT-Patches
    ```
 4. Enable the patches you need, selecting the exact app version that matches your APK.
 5. Build and install the patched APK.
@@ -398,7 +398,7 @@ Found a bug or compatibility issue? Help us improve:
    - Architecture (arm64-v8a, etc.)
    - **Error logs (required — reports without logs will be ignored and closed)**
 
-3. **Report:** Open an [issue on GitHub](https://github.com/WaggBR/Wagg13Patch_Morphe/issues) with:
+3. **Report:** Open an [issue on GitHub](https://github.com/AWTMODS/AWT-Patches/issues) with:
    ```
    Title: [App Name] — Brief description of issue
 
@@ -433,8 +433,8 @@ Found a bug or compatibility issue? Help us improve:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/WaggBR/Wagg13Patch_Morphe.git
-   cd Wagg13Patch_Morphe
+   git clone https://github.com/AWTMODS/AWT-Patches.git
+   cd AWT-Patches
    ```
 
 2. Set your environment variables:
@@ -507,8 +507,8 @@ Requests that only name an app, with no working code, will not be accepted. Incl
 
 ## Support & feedback
 
-- **Issues:** [GitHub Issues](https://github.com/WaggBR/Wagg13Patch_Morphe/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/WaggBR/Wagg13Patch_Morphe/discussions)
+- **Issues:** [GitHub Issues](https://github.com/AWTMODS/AWT-Patches/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/AWTMODS/AWT-Patches/discussions)
 
 For questions about Morphe itself, visit [Morphe's official documentation](https://morphe.software/).
 

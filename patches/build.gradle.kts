@@ -1,13 +1,12 @@
-group = "app.wagg13"
+group = "com.awt"
 
 patches {
     about {
-        name = "Wagg13Patch_Morphe"
-        description = "Modding apps i like "
-        source = "git@github.com:WaggBR/Wagg13Patch_Morphe.git"
-        author = "Wagg13"
-        contact = "t.me/wagg13"
-        website = "https://github.com/WaggBR"
+        name = "AWT-Patches"
+        description = "AWT Morphe Patches"
+        source = "git@github.com:AWTMODS/AWT-Patches.git"
+        author = "AWT"
+        website = "https://github.com/AWTMODS/AWT-Patches"
         license = "GPLv3"
     }
 }
